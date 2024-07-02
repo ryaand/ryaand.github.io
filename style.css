@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+/* a{
+    margin-left: 20px;
+    margin-right: 10px;
+} */
+
+.titel-gede{
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    padding-bottom: 0;
+    line-height: 0.5;
+    margin-top: 10px;
+}
+
+.titel-kecil{
+    font-family: 'Montserrat';
+    font-weight: light;
+    font-size: 15px;
+}
