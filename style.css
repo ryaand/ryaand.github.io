@@ -356,43 +356,33 @@
 
 }
 
+/* ---------- HEADER 2 ---------- */
+
 .header2 {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-    font-family: "Poppins", sans-serif;
-    margin-top: 20px;
-    margin-right: 50px;
-    margin-left: 50px;
-    padding-bottom: 0px;
+    font-family: 'Inter';
 }
 
-.how {
-    width: 100%;
-    margin-bottom: 60px;
+.header2 > div{
+    flex: 1;
+    flex-wrap: wrap;
 }
 
-.cara-joki {
+.judul-cara-joki {
     display: flex;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1200px) {
-    .header2 {
-        display: flex;
-        flex-direction: row;
+@media (max-width: 768px) {
+    section.header2 {
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .cara-joki {
-        justify-content: left;
-    }
-
-    .container-carajoki {
-        margin-left: 20%;
-    } 
-
-    .how {
-        width: 300px;
-        margin-left: 50%;
+    .cara-joki, .kotak2, .kotak3 {
+        flex: none;
+        width: 100%;
+        padding: 40px;
     }
 }
