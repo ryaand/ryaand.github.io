@@ -88,3 +88,48 @@
     font-family: "Montserrat";
     font-weight: bolder;
 }
+
+.testing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    font-size: 70px;
+    font-family: "Montserrat";
+    font-weight: bolder;
+}
+
+.navbar-toggler::after {
+    content: "";
+    position: fixed;
+    top: 50px; /* Awal dari margin-top 50px */
+    left: 0;
+    width: 100%;
+    height: calc(100%); /* Sesuaikan tinggi sesuai margin-top akhir */
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s, opacity 0.3s, visibility 0.3s;
+    z-index: -1; /* Posisikan di belakang tombol */
+}
+
+.navbar-toggler:not(.collapsed)::after {
+    top: 204px; /* Akhir dari margin-top 204px */
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+    animation: slideDown 0.35s forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        top: 50px;
+        opacity: 0;
+    }
+    100% {
+        top: 204px;
+        opacity: 1;
+    }
+}
