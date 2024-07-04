@@ -63,7 +63,7 @@
     font-family: 'Montserrat';
     font-weight: bolder;
     padding-bottom: 0;
-    line-height: 0.5;
+    line-height: 0.8;
     margin-top: 10px;
 }
 
@@ -132,4 +132,17 @@
         top: 204px;
         opacity: 1;
     }
+}
+
+.img-fluid{
+    width: 700px;
+}
+
+.coba-rent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Montserrat;
+    font-size: 30px;
 }
