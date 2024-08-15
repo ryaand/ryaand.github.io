@@ -84,28 +84,18 @@
 }
 
 .nav-RentNow{
-    transition: transform .3s ease-in-out;
+    background-color: black;
+    color: white;
+    transition: background-color .3s;
 }
 
 .nav-RentNow:hover {
-    transform: scale(1.05);
-}
-
-.nav-HowTo:hover {
-    transform: scale(1.05);
+    background-color: white;
+    color: black;
 }
 
 .nav-HowTo{
-    transition: transform .3s ease-in-out;
     display: inline-block;
-}
-
-.nav-About:hover {
-    transform: scale(1.05);
-}
-
-.nav-About{
-    transition: transform .3s ease-in-out;
 }
 
 .navbar-toggler::after {
@@ -159,7 +149,7 @@
     background: rgb(252, 239, 165);
     background: linear-gradient(0deg, #d9985c 0%, rgba(255,255,255,1) 100%);
     width: 100%;
-    height: 80%;
+    height: 350px;
     border-radius: 40px;
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -223,7 +213,7 @@
     color: white;
     border-radius: 30px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
-    transition: color .3s ease-in-out, background-color .3s ease-in-out, transform .8s;
+    transition: color .3s ease-in-out, background-color .2s ease-in-out, transform .1s;
 }
 
 .btn-rentnow:hover {
@@ -236,11 +226,11 @@
     z-index: 1;
     border: none;
     background-color: transparent;
-    transition: transform .8s;
+    transition: color .2s;
 }
 
 .btn-BacaKetentuan:hover {
-    transform: scale(1.1);
+    color: white;
 }
 
 .circles{
@@ -371,6 +361,21 @@
     flex: 1;
 }
 
+.gambar1{
+    width: 50px;
+    margin-bottom: 35px;
+}
+
+.gambar2{
+    width: 50px;
+    margin-bottom: 35px;
+}
+
+.gambar3{
+    width: 50px;
+    margin-bottom: 35px;
+}
+
 .kotak1, .kotak2, .kotak3 {
     display: flex;
     justify-content: center;
@@ -382,9 +387,13 @@
 @media screen and (max-width: 615px) {
     .header2 {
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 20px;
         margin-left: 40px;
         margin-right: 40px;
+    }
+
+    .gambar1{
+        margin-bottom: 50px;
     }
 }

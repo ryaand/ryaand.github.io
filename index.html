@@ -13,7 +13,10 @@
   </head>
   <body style="background-color: rgb(255, 255, 255);">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-md fixed-top py-2" style="background-color: #ffffff;">
+
+      <!-- NAVBAR ANJENG-->
+
+      <nav class="navbar navbar-expand-md fixed-top py-2" style="background-color: #ffffff; font-family: 'Monstserrat';">
         <div class="container-fluid" style="font-family: inter;">
           <a class="navbar-brand d-flex align-items-center" href="index.html" >
             <img src="icon.png" alt="JOSURA" style="margin-left: 20px; margin-right: 20px; height: 50px;">
@@ -31,7 +34,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto" style="margin-right: 10px;">
               <li class="d-flex justify-content-start align-items-center gap-3 ">
-                <a class="nav-RentNow text-white text-decoration-none px-3 py-1 rounded-4" style="background-color: black; margin-top: 9px; margin-bottom: 9px;" href="RentNow.html">Rent Now</a>
+                <a class="nav-RentNow text-decoration-none px-3 py-1 rounded-4" style="margin-top: 9px; margin-bottom: 9px;" href="RentNow.html">Rent Now</a>
               </li>
               <li class="nav-HowTo d-flex justify-content-start align-items-center ">
                 <a class="text-black text-decoration-none" style="margin-right: 20px; margin-left: 20px; background-color: transparent; margin-top: 8px; margin-bottom: 8px " href="HowTo.html">How to</a>
@@ -44,6 +47,9 @@
         </div>
       </nav>
       <div class="backdrop"></div>
+
+      <!-- HEADER 1 -->
+
       <section class="header1">
         <div class="container-judul">
           <p class="tugasmu" style="z-index: 1;">Tugasmu <b>Urusanku.</b></p>
@@ -57,8 +63,7 @@
             Rent Now
           </button>
           <button href="#CaraJoki" class="btn-BacaKetentuan">
-            Baca Ketentuan
-            <img src="arrow.svg" style="height: 15px;">
+            Baca Ketentuan →
           </button>
         </div>
         <div class="area" >
@@ -81,14 +86,31 @@
 
       <section class="header2">
         <div class="kotak1">
+          <div style="width: 100%; height: 50px; display: flex; justify-content: center; align-items: center;">
+            <svg class="gambar1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+              <path fill-rule="evenodd" d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5Zm6.61 10.936a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+              <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
+            </svg>
+          </div>
           <h4 style="display: flex; justify-content: center;align-items: center;"><b>Proses Mudah</b></h4>
           <p style="text-align: center;">Tidak membutuhkan banyak data, hanya tugas dan menunggu.</p>
         </div>
         <div class="kotak2">
+          <div style="width: 100%; height: 50px; display: flex; justify-content: center; align-items: center;">
+            <svg class="gambar2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+              <path d="M4.5 3.75a3 3 0 0 0-3 3v.75h21v-.75a3 3 0 0 0-3-3h-15Z" />
+              <path fill-rule="evenodd" d="M22.5 9.75h-21v7.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-7.5Zm-18 3.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd" />
+            </svg>            
+          </div>
           <h4 style="display: flex; justify-content: center;align-items: center;"><b>Biaya Murah</b></h4>
           <p style="text-align: center;">Bayar dengan biaya yang seikhlasnya.</p>
         </div>
         <div class="kotak3">
+          <div style="width: 100%; height: 50px; display: flex; justify-content: center; align-items: center;">
+            <svg class="gambar3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+              <path d="M7.493 18.5c-.425 0-.82-.236-.975-.632A7.48 7.48 0 0 1 6 15.125c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75A.75.75 0 0 1 15 2a2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23h-.777ZM2.331 10.727a11.969 11.969 0 0 0-.831 4.398 12 12 0 0 0 .52 3.507C2.28 19.482 3.105 20 3.994 20H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 0 1-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227Z" />
+            </svg>                     
+          </div>
           <h4 style="display: flex; justify-content: center;align-items: center;"><b>Admin Ramah</b></h4>
           <p style="text-align: center;">Pesananamu akan langsung dibalas jika jam kerja.</p>
         </div>
