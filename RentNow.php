@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
   <head>
@@ -5,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JOSURA - Joki Ikhlas Sukaria</title>
     <link rel="icon" href="image.png">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
@@ -41,9 +43,38 @@
         </div>
       </nav>
       <div class="backdrop">
-        <div class="coba-rent">
-            MAU SEWA APA NJIR?🤨
-        </div>
+      <div class="w-full max-w-lg p-8 bg-white shadow-lg rounded-lg">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800">Formulir Pendaftaran</h2>
+        <form action="./php/kirim.php" method="POST">
+            <div class="mb-5">
+                <label for="nama" class="block text-gray-700 text-lg font-medium mb-2">Nama:</label>
+                <input type="text" name="nama" placeholder="Samaran" class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300 ease-in-out">
+            </div>
+            
+            <div class="mb-5">
+                <label for="mapel" class="block text-gray-700 text-lg font-medium mb-2">Mata Pelajaran:</label>
+                <select name="mapel" class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300 ease-in-out">
+                    <option value="">Pilih Mata Pelajaran</option>
+                    <option value="mat">Matematika</option>
+                    <option value="ipa">IPA</option>
+                    <option value="ips">IPS</option>
+                    <option value="bindo">B. Indonesia</option>
+                </select>
+            </div>
+            
+            <div class="mb-5">
+                <label for="kelas" class="block text-gray-700 text-lg font-medium mb-2">Kelas:</label>
+                <input type="text" name="kelas" placeholder="Contoh: 10 A" class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300 ease-in-out">
+            </div>
+            
+            <div class="mb-5">
+                <label for="notes" class="block text-gray-700 text-lg font-medium mb-2">Catatan:</label>
+                <textarea id="notes" name="note" rows="4" placeholder="Catatan tambahan (opsional)" class="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300 ease-in-out"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full px-4 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 ease-in-out">Kirim</button>
+        </form>
+    </div>
     </section>  
   </body>
 </html>
