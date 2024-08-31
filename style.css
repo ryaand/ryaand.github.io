@@ -8,6 +8,12 @@
     src: url(font/Inter-Regular.ttf);
 }
 
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
 .navbar-toggler {
     border: 0 !important;
 }
@@ -354,7 +360,7 @@
     font-family: 'Montserrat';
     display: flex;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -398,4 +404,16 @@
     .gambar1{
         margin-bottom: 50px;
     }
+}
+
+/* ---------- HEADER 3 ---------- */
+
+.header3 {
+    font-family: 'Poppins';
+}
+
+.judul-h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
